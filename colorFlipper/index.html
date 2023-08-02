@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Color Flipper</title>
+
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+            crossorigin="anonymous"
+        />
+
+        <style>
+            body {
+                background-color: white;
+            }
+
+            .bg-success {
+                background-color: #28a745;
+                color: white;
+            }
+
+            .navbar {
+                font-size: 24px;
+                font-weight: bold;
+            }
+
+            .bg-color {
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+
+            .border {
+                font-size: 20px;
+                font-weight: bold;
+            }
+
+            #change-color-btn {
+                font-size: 24px;
+                padding: 10px 20px;
+                border-radius: 8px;
+            }
+        </style>
+    </head>
+    <body id="body">
+        <div class="bg-success">
+            <div class="row text-center navbar">
+                <div class="col-6">Color Flipper</div>
+                <div class="col-6">Simple Hex</div>
+            </div>
+        </div>
+
+        <div
+            class="container d-flex justify-content-center align-items-center vh-100"
+        >
+            <div class="text-center">
+                <div class="bg-color">
+                    <div class="bg-text">
+                        <p class="border p-3" id="color-code">
+                            Background Color: #FFF
+                        </p>
+                    </div>
+                    <button
+                        class="btn btn-lg btn-primary"
+                        id="change-color-btn"
+                    >
+                        Click Me!
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
